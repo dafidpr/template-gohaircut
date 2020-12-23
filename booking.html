@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0BAF7B">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <title>Booking | Ganteng Maksimal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendors/switchery/dist/switchery.css">
+    <link rel="stylesheet" href="vendors/niceselect/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/material-date-range-picker/dist/duDatepicker-theme.css">
+    <link rel="stylesheet" href="vendors/material-date-range-picker/dist/duDatepicker.css">
+    <link rel="stylesheet" href="vendors/material-date-range-picker/dist/duDatepicker-theme.css">
+</head>
+<body>
+    
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-light p-4">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" width="150" alt="">
+                </a>
+                <div class="dropdown dropdown-mobile">
+                    <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+                        <div class="d-flex">
+                            <span class="avatar" style="background-image: url(./img/profile/25.jpg)"></span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">
+                            <i class="dropdown-icon" data-feather="user"></i> Profile
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="dropdown-icon" data-feather="check-circle"></i> Riwayat
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="dropdown-icon" data-feather="settings"></i> Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html">
+                            <i class="dropdown-icon" data-feather="log-out"></i> Sign out
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+                                    <div class="d-flex">
+                                        <span class="avatar" style="background-image: url(./img/profile/25.jpg)"></span>
+                                        <span class="ml-2 d-none d-lg-block">
+                                            <span>Dafid Prasetyo</span>
+                                            <small class="text-muted d-block">Hi, dafid</small>
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="dropdown-icon" data-feather="user"></i> Profile
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="dropdown-icon" data-feather="check-circle"></i> Riwayat
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="dropdown-icon" data-feather="settings"></i> Settings
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.html">
+                                        <i class="dropdown-icon" data-feather="log-out"></i> Sign out
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+      <!-- Hero Section -->
+       <section class="booking bg-section p-4">
+            <div class="container mt-2">
+                <h3 class="font-weight-bold">Paket Gold</h3>
+                <h5 class="text-muted">Hairnerds Studio</h5>
+            </div>
+       </section>
+
+      <section class="form-booking mt-4 p-4">
+          <div class="container">
+              <h3 class="font-weight-bold">Detail Order</h3>
+                <form class="mt-5">
+                    <p>Siapa yang order ?</p>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Saya</label>
+                        <div class="col-sm-5">
+                            <label>
+                                <input type="checkbox" class="js-switch" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Nama <span class="text-danger">*</span></label>
+                        <div class="col-sm-5">
+                             <input type="text" class="form-control" placeholder="Nama Lengkap">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Email <span class="text-danger">*</span></label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Whatsapp</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" placeholder="Whatsapp">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Dewasa</label>
+                        <div class="col-sm-5">
+                            <select class="nice-select wide">
+                                <option data-display="Jumlah Dewasa">Dewasa</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Anak</label>
+                        <div class="col-sm-5">
+                            <select class="nice-select wide">
+                                <option data-display="Jumlah Anak">Anak</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Tanggal <span class="text-danger">*</span></label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control datepicker" placeholder="Tanggal">
+                        </div>
+                    </div>
+                    <div class="form-group row mt-4">
+                        <h5 class="font-weight-bold col-sm-2">Total</h5>
+                        <div class="col-sm-5">
+                           <h4 class="text-theme text-right">Rp. 30.000</h4>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-7">
+                        <a href="success-order.html" class="btn btn-color-theme btn-block p-2">Booking</a>
+                        </div>
+                    </div>
+                </form>
+          </div>
+      </section>
+
+
+
+      <!-- Footer Section -->
+    <section class="footer bg-section pt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-5">
+                  <img src="img/logo.png" width="150" alt="">
+                  <p class="text-muted mt-4">Kami merupakan platform untuk menghubungkan antara pelanggan dan barber yang bermaksud untuk mempermudah anda untuk menemukan barber terbaik dan siap membuat anda ganteng maksimal.</p>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <h6 class="font-weight-bold mb-4">Bantuan</h6>
+                  <ul class="list-group list-unstyled">
+                      <li class="pb-2"><a href="" class="text-muted text-decoration-none">Tata Cara</a></li>
+                      <li class="pb-2"><a href="" class="text-muted text-decoration-none">Bantuan</a></li>
+                      <li class="pb-2"><a href="" class="text-muted text-decoration-none">Kebijakan Privasi</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h6 class="font-weight-bold mb-4">Office</h6>
+                  <p class="text-muted">gohaircut@gmail.com <br> Banyuwangi, Jawa Timur
+                      Indonesia </p>
+              </div>
+          </div>
+          <hr>
+          <p class="text-center mt-5">&copy; Copyright <strong><span class="text-theme">go </span>haircut</strong> 2020. All right reserved</p>
+      </div>
+  </section>
+
+
+    <script src="vendors/jquery/jquery-3.5.1.min.js"></script>
+    <script src="vendors/popper/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/switchery/dist/switchery.js"></script>
+    <script src="vendors/niceselect/js/jquery.nice-select.js"></script>
+    <script src="vendors/material-date-range-picker/dist/duDatepicker.min.js"></script>
+    <script src="vendors/feather-icons/dist/feather.js"></script>
+    <script>
+        $(document).ready(function() {
+            feather.replace();
+            $('select').niceSelect();
+            duDatepicker('.datepicker', {
+                format: 'dd-mm-yyyy'
+            });
+
+        });
+        var elems = document.querySelectorAll('.js-switch');
+
+        elems.forEach(function(html) {
+            var switchery = new Switchery(html, { color: '#0BAF7B', jackColor: '#fff' });
+        });
+    </script>
+</body>
+</html>
