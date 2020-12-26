@@ -177,3 +177,6 @@ body{
   .barber-profile-img{
     border: 4px solid #0BAF7B;
   }
+  .mapboxgl-marker{
+    cursor: pointer;
+  }
