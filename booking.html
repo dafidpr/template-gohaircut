@@ -97,20 +97,20 @@
                         <label class="col-sm-2 col-form-label">Saya</label>
                         <div class="col-sm-5">
                             <label>
-                                <input type="checkbox" class="js-switch" />
+                                <input type="checkbox" id="switch" class="js-switch" />
                             </label>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Nama <span class="text-danger">*</span></label>
                         <div class="col-sm-5">
-                             <input type="text" class="form-control" placeholder="Nama Lengkap">
+                             <input type="text" class="form-control" id="name" placeholder="Nama Lengkap">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Email <span class="text-danger">*</span></label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input type="text" class="form-control" id="email" placeholder="Email">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -213,6 +213,21 @@
         elems.forEach(function(html) {
             var switchery = new Switchery(html, { color: '#0BAF7B', jackColor: '#fff' });
         });
+
+
+        $('#switch').on('click', function () { 
+            if($(this).is(':checked') == true){
+                $('#name').attr('readonly', true);
+                $('#email').attr('readonly', true);
+                $('#name').val('Dafid Prasetyo');
+                $('#email').val('dafid@gmail.com');
+            } else {
+                $('#name').attr('readonly', false);
+                $('#email').attr('readonly', false);
+                $('#name').val('');
+                $('#email').val('');
+            }
+         })
     </script>
 </body>
 </html>
