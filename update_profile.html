@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0BAF7B">
     <link rel="icon" type="image/png" href="img/favicon.png"/>
-    <title>Booking | Ganteng Maksimal</title>
+    <title>Update Profile | Ganteng Maksimal</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="vendors/switchery/dist/switchery.css">
@@ -80,87 +80,56 @@
         </nav>
     </section>
 
-      <!-- Hero Section -->
-       <section class="booking bg-section p-4">
-            <div class="container mt-2">
-                <h3 class="font-weight-bold">Paket Gold</h3>
-                <h5 class="text-muted">Hairnerds Studio</h5>
-            </div>
-       </section>
+    <section class="booking bg-section p-5">
+        <div class="container mt-2">
+              <div class="row">
+                  <div class="col-md-1 mr-5">
+                    <img src="img/profile/25.jpg" width="110" class="barber-profile-img" style="border-radius: 50%;" alt="">
+                  </div>
+                  <div class="col-md-10 mt-3">
+                      <h3 class="font-weight-bold">Dafid Prasetyo</h3>
+                        <div class="row">
+                            <div class="col-md-5 mb-2">
+                                <small class="text-muted"> <i data-feather="message-square" width="16px"></i> dafidprasetyo@gmail.com </small>
+                            </div>
+                       </div>
+                  </div>
+              </div>
+        </div>
+   </section>
 
-      <section class="form-booking mt-4 p-4">
+      <section class="form-booking mt-3 p-4">
           <div class="container">
-              <h3 class="font-weight-bold">Detail Order</h3>
-                <form class="mt-5">
-                    <p>Siapa yang order ?</p>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Saya</label>
-                        <div class="col-sm-5">
-                            <label>
-                                <input type="checkbox" id="switch" class="js-switch" />
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Nama <span class="text-danger">*</span></label>
-                        <div class="col-sm-5">
-                             <input type="text" class="form-control" id="name" placeholder="Nama Lengkap">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Email <span class="text-danger">*</span></label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" id="email" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Whatsapp</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" placeholder="Whatsapp">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Dewasa</label>
-                        <div class="col-sm-5">
-                            <select class="nice-select wide">
-                                <option data-display="Jumlah Dewasa">Dewasa</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                              </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Anak</label>
-                        <div class="col-sm-5">
-                            <select class="nice-select wide">
-                                <option data-display="Jumlah Anak">Anak</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Tanggal <span class="text-danger">*</span></label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control datepicker" placeholder="Tanggal">
-                        </div>
-                    </div>
-                    <div class="form-group row mt-4">
-                        <h5 class="font-weight-bold col-sm-2">Total</h5>
-                        <div class="col-sm-5">
-                           <h4 class="text-theme text-right">Rp. 30.000</h4>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-7">
-                        <a href="success-order.html" class="btn btn-color-theme btn-block p-2">Booking</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
+              <h3 class="font-weight-bold">Update Profile</h3>
+              <div class="row">
+                  <div class="col-md-5 mr-5">
+                      <form class="mt-4">
+                          <div class="form-group">
+                              <label>Nama Lengkap <span class="text-danger">*</span></label>
+                              <input type="text" class="form-control" placeholder="Nama Lengkap" value="Dafid Prasetyo">
+                          </div>
+                          <div class="form-group">
+                              <label>Email <span class="text-danger">*</span></label>
+                              <input type="text" class="form-control" placeholder="Email" value="dafidprasetyo@gmail.com">
+                          </div>
+                          <div class="form-group">
+                              <label>Foto</label>
+                              <div class="input-group mb-3">
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <a href="success-order.html" class="btn btn-color-theme p-2">Ubah Profile</a>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
       </section>
+
 
     <section class="footer bg-section pt-5">
       <div class="container">
@@ -199,32 +168,11 @@
     <script>
         $(document).ready(function() {
             feather.replace();
-            $('select').niceSelect();
-            duDatepicker('.datepicker', {
-                format: 'dd-mm-yyyy'
-            });
-
         });
-        var elems = document.querySelectorAll('.js-switch');
-
-        elems.forEach(function(html) {
-            var switchery = new Switchery(html, { color: '#0BAF7B', jackColor: '#fff' });
+        $('.custom-file-input').on('change', function(){
+            let fileName = $(this).val().split('\\').pop();
+            $(this).next('.custom-file-label').addClass("selected").html(fileName);
         });
-
-
-        $('#switch').on('click', function () { 
-            if($(this).is(':checked') == true){
-                $('#name').attr('readonly', true);
-                $('#email').attr('readonly', true);
-                $('#name').val('Dafid Prasetyo');
-                $('#email').val('dafid@gmail.com');
-            } else {
-                $('#name').attr('readonly', false);
-                $('#email').attr('readonly', false);
-                $('#name').val('');
-                $('#email').val('');
-            }
-         })
     </script>
 </body>
 </html>
